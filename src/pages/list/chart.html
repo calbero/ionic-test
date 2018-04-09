@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Tech Test</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item padding>
+    <ion-label>Refresh time:</ion-label>
+    <ion-input placeholder="10" type="number" (change)="updateInterval()" [(ngModel)]="refreshTime"></ion-input>
+  </ion-item>
+
+  <canvas height="400" #chartCanvas></canvas>
+
+</ion-content>
